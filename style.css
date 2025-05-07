@@ -1,0 +1,61 @@
+:root {
+    --verde: #48A456;
+    --branco: #ffffff;
+    --preto: #000000;
+    --fonte-principal: 'Inter'
+  }
+
+header{
+    
+}
+body{  
+    font-family: var(--fonte-principal);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container1{
+    display: flex;
+    background-color: var(--verde);
+    justify-content: center;
+    
+}
+.container2{
+    display: flex;
+    background-color: var(--branco);
+}
+
+.textHeader1{
+    color: var(--branco);
+    padding: 63px 20px 63px 20px;
+    font-size: 14px;
+    font-weight:300;
+    letter-spacing: 0.5px;
+    
+}
+
+.textHeader2{
+    color: var(--preto);
+    padding: 63px 10px 63px 10px;
+    font-size: 24px;
+    font-weight:300;
+    letter-spacing: 0.5px;
+}
+
+.centro{
+    margin: 0px 120px 0px 120px;
+    
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 36px;
+    margin-right: 36px;
+}
+
+.placeholder{
+    font-style: italic;
+}
