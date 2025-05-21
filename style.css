@@ -1,13 +1,13 @@
+/* INDEX */
 :root {
     --verde: #48A456;
+    --verde-escuro: #31793e;
     --branco: #ffffff;
     --preto: #000000;
     --fonte-principal: 'Inter'
   }
 
-header{
-    
-}
+
 body{  
     font-family: var(--fonte-principal);
 }
@@ -16,7 +16,7 @@ body{
     margin: 0;
     padding: 0;
 }
-
+/*HEADER PADRAO*/
 .container1{
     display: flex;
     background-color: var(--verde);
@@ -26,6 +26,13 @@ body{
 .container2{
     display: flex;
     background-color: var(--branco);
+}
+/*HEADER DE ONDE FICA A SETA*/
+.header2{
+    display: block;
+    background-color: var(--verde);
+    justify-content: center;
+    
 }
 
 .textHeader1{
@@ -39,7 +46,7 @@ body{
 
 .textHeader2{
     color: var(--preto);
-    padding: 63px 10px 63px 10px;
+    padding: 63px 25px 63px 25px;
     font-size: 24px;
     font-weight:300;
     letter-spacing: 0.5px;
@@ -53,9 +60,95 @@ body{
 .logo{
     font-weight: 700;
     font-size: 36px;
-    margin-right: 36px;
+    margin-right: 130px;
 }
 
 .placeholder{
     font-style: italic;
+}
+
+.dir{
+    position: absolute;
+    display: flex;
+    right:50px;
+   
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* CADASTRO */
+
+.container-cadastro {
+    width: 100%;
+    max-width: 600px;
+    background: var(--branco);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 70px;
+}
+  
+.cabecalho-cadastro {
+    background: #ffffff;
+    padding: 1rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-bottom: 4px solid #d9d9d9;
+}
+  
+.formulario-cadastro {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza tudo horizontalmente */
+    text-align: center;  /* centraliza os textos */
+}
+
+
+.formulario-cadastro label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #000000;
+    font-weight: 500;
+}
+  
+.formulario-cadastro input[type="text"],
+.formulario-cadastro input[type="email"]
+.formulario-cadastro input[type="password"] {
+    width: 80%;
+    padding: 0.75rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+  
+.formulario-cadastro input[type="password"]:focus {
+    border-color: var(--verde);
+    outline: none;
+}
+  
+.botao-cadastro {
+    width: 90%;
+    padding: 0.75rem;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.botao-cadastro:hover {
+    background-color: var(--verde-escuro);
+}
+  
+.voltar{
+    padding: 63px 30px 63px 30px;
+    
 }
